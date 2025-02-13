@@ -75,15 +75,6 @@ def get_args():
     parser.add_argument('--text_dict_size', type=int, default=50, help='size of confounder dictionary')
     parser.add_argument('--vision_dict_size', type=int, default=50, help='size of confounder dictionary')
 
-    # Debias模块
-    parser.add_argument('--whether_debias_audio', action='store_false', help='whether to debias audio')
-    parser.add_argument('--whether_debias_text', action='store_false', help='whether to debias text')
-    parser.add_argument('--whether_debias_vision', action='store_false', help='whether to debias vision')
-    parser.add_argument('--audio_debias_layers', type=int, default=3, help="layers in debias self attention")
-    parser.add_argument('--vision_debias_layers', type=int, default=3, help="layers in debias self attention")
-    parser.add_argument('--text_debias_layers', type=int, default=3, help="layers in debias self attention")
-    parser.add_argument('--attn_dropout_debias', type=float, default=0.1, help="dropout in single modal self attention")
-
     # 单模态Mlp模块
     parser.add_argument('--audio_mlp_hidden_size', type=int, default=16,
                         help="the hidden size of mlp in audio projection")
@@ -97,12 +88,6 @@ def get_args():
     parser.add_argument('--top_k',type=int,default=2,help='the top-n routers are activated')
     parser.add_argument('--hyperalpha',type=float,default=0.01,help='the strength of gradient modulation')
     parser.add_argument('--hyperbeta',type=float,default=0.01,help='the strength of gradient modulation')
-
-    # # CounterFactual模块
-    # parser.add_argument('--whether_use_counterfactual', action='store_false', help="whether to use counterfactual")
-    # parser.add_argument('--learned_query_size_a',type=int,default=50)
-    # parser.add_argument('--learned_query_size_v',type=int,default=50)
-    # parser.add_argument('--num_layers_counter',type=int,default=2)
 
     parser.add_argument('--end_epoch',type=int,default=5)
 
