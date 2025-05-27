@@ -24,7 +24,6 @@ torch == 1.8.1
 
 numpy == 1.20.0
 
-<<<<<<< HEAD
 ## Citation
 
 If you use this code please cite it as:
@@ -39,6 +38,4 @@ If you use this code please cite it as:
 }
 ```
 
-**Thank you for your support. If you have any questions, feel free to post them in the [issues](https://github.com/TheShy-Dream/AtCAF/issues) or contact us via [irelia@zjnu.edu.cn](mailto:irelia@zjnu.edu.cn).**
-=======
 **Thank you for your support. If you have any questions, feel free to post them in the [issues](https://github.com/TheShy-Dream/AGS-SMoE/issues) or contact us via [irelia@zjnu.edu.cn](mailto:irelia@zjnu.edu.cn).**
